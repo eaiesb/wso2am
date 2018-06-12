@@ -27,6 +27,8 @@ ARG USER_HOME=/root
 # set dependant files directory
 ARG FILES=./../../../../../softwares/
 
+RUN echo ${FILES}
+
 # set jdk configurations
 ARG JDK=jdk1.8.0*
 ARG JAVA_HOME=${USER_HOME}/java
