@@ -13,7 +13,7 @@ steps { buildApp() }
 }
 // steps
 def buildApp() {
-dir ('eaiesbhub/wso2am/' ) {
+dir ('eaiesb/wso2am/' ) {
 def appImage = docker.build("eaiesbhub/wso2am:${BUILD_NUMBER}")
 }
 }
