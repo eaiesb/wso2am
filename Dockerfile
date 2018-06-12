@@ -25,7 +25,7 @@ MAINTAINER Kiran Kumar Padam
 ARG USER_HOME=/root
 
 # set dependant files directory
-ARG FILES=./../../../../../softwares/
+ARG FILES=/softwares
 
 RUN echo ${FILES}
 
