@@ -25,7 +25,7 @@ MAINTAINER Kiran Kumar Padam
 ARG USER_HOME=/root
 
 # set dependant files directory
-ARG FILES=/home/vagrant/softwares
+ARG FILES=./../../../../../softwares/
 
 # set jdk configurations
 ARG JDK=jdk1.8.0*
