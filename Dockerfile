@@ -19,6 +19,9 @@ RUN chown -R root:root ${USER_HOME}/${WSO2_SERVER_DIST}/repository/conf/datasour
 COPY ./metrics-datasources.xml ${USER_HOME}/${WSO2_SERVER_DIST}/repository/conf/datasources/
 RUN chown -R root:root ${USER_HOME}/${WSO2_SERVER_DIST}/repository/conf/datasources/
 
+COPY ./axis2.xml ${USER_HOME}/${WSO2_SERVER_DIST}/repository/conf/axis2
+RUN chown -R root:root ${USER_HOME}/${WSO2_SERVER_DIST}/repository/conf/axis2
+
 RUN chmod -R 777 /root/wso2am-2.1.0
 
 # expose ports
